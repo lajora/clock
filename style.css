@@ -1,0 +1,29 @@
+html {
+  background: url('./background.jpeg');
+  background-size: cover;
+}
+
+.clock {
+  position: absolute;
+  width: 300px;
+  height: 300px;
+  border: 20px solid #053225;
+  border-radius: 50%;
+  left: 50%;
+  top: 50%;
+  background: #fefbf28c;
+  transform: translate(-50%, -50%);
+  box-shadow: inset 0px 0px 10px black;
+}
+
+.hand {
+  width: 50%;
+  height: 6px;
+  background:#053225;
+  position: absolute;
+  top: 50%;
+  transform-origin: 100%;
+  transform: rotate(90deg);
+  transition: all 0.05s;
+  transition-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
